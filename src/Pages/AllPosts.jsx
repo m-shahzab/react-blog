@@ -4,7 +4,6 @@ import { Container, PostCard } from "../components/index";
 import useGetPosts from "../hooks/useGetPosts";
 
 function AllPosts() {
-  console.log("all post");
   const posts = useGetPosts();
   // useEffect(() => {
   // appwriteService.getPosts([]).then((post) => {

@@ -23,7 +23,6 @@ function PopUp({ setMdelOpen }) {
         const as = await appwriteAuth.updateUser({ profilePhoto: file.$id });
         dispatch(updateAuth(as));
         setMdelOpen(false);
-        console.log("profile uploaded on server");
       }
     }
   };

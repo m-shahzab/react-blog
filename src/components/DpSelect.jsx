@@ -2,7 +2,6 @@ import { MdCloudUpload } from "react-icons/md";
 
 function DpSelect({ img, setImg }) {
   const inputH = (e) => {
-    console.log(e.target.files);
     // setImg(URL.createObjectURL(e.target.files[0]));
     setImg({
       img: e.target.files[0],

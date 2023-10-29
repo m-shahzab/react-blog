@@ -9,7 +9,6 @@ import useGetPosts from "../hooks/useGetPosts";
 import { PulseLoader } from "react-spinners";
 
 export default function Post() {
-  console.log("post");
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(false);
   const { slug } = useParams();

@@ -24,7 +24,6 @@ export default function PostForm({ post }) {
 
   const submit = async (data) => {
     setLoading(true);
-    console.log("data ::", data.image[0]);
 
     if (post) {
       const file = data.image[0]

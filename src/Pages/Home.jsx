@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 function Home() {
-  console.log("home");
   const { post: postSlice } = useSelector((state) => state.posts);
   const [post, setPost] = useState([]);
   const status = useSelector((state) => state.auth.status);
@@ -24,7 +23,6 @@ function Home() {
       </div>
     );
   }
-  console.log("post :::", post);
   return (
     <div className="py-8 w-full">
       <Container>

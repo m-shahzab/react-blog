@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import appwriteService from "../appwrite/config";
 
 function PostCard({ $id, title, featuredImage }) {
-  console.log("postcard");
   // const {  } = post;
   // <img
   //                 role="presentation"

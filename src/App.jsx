@@ -10,7 +10,6 @@ import useFetchPost from "./hooks/useFetchPost";
 import Loader from "./components/Loader";
 
 function App() {
-  console.log("app");
 
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();

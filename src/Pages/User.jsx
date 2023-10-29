@@ -7,7 +7,6 @@ import { useSelector } from "react-redux";
 
 function User() {
   const [modelOpen, setMdelOpen] = useState(false);
-  console.log("user");
   const { prefs, name, email } = useSelector((state) => state.auth.user);
 
   const isDp = prefs.profilePhoto
