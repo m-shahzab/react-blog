@@ -8,7 +8,7 @@ import store from "./reducer/store/store";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Container, Login } from "./components/index";
 
-import AddPost from "./pages/AddPost";
+import AddPost from "./Pages/AddPost.jsx";
 import Signup from "./pages/Signup";
 import EditPost from "./pages/EditPost";
 import AuthLayout from "./components/AuthLayout";
