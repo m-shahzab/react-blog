@@ -6,18 +6,21 @@ import { Provider } from "react-redux";
 import store from "./reducer/store/store";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Container, Login } from "./components/index";
+import { Login } from "./components/index";
 
-import AddPost from "./Pages/AddPost.jsx";
-import Signup from "./pages/Signup";
-import EditPost from "./pages/EditPost";
 import AuthLayout from "./components/AuthLayout";
-import Post from "./pages/Post";
-import AllPosts from "./Pages/AllPosts";
-import Home from "./pages/Home";
-import User from "./pages/User";
-import ErrorPage from "./pages/ErrorPage";
-import Loader from "./components/Loader.jsx";
+
+import {
+  Home,
+  ErrorPage,
+  Login,
+  Signup,
+  User,
+  AllPosts,
+  EditPost,
+  AddPost,
+  Post,
+} from "./components/index";
 
 const router = createBrowserRouter([
   {
@@ -53,14 +56,6 @@ const router = createBrowserRouter([
         element: (
           <AuthLayout authentication>
             <User />
-          </AuthLayout>
-        ),
-      },
-      {
-        path: "/t",
-        element: (
-          <AuthLayout authentication>
-            <Loader />
           </AuthLayout>
         ),
       },

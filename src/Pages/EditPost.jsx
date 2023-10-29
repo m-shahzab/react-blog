@@ -5,7 +5,7 @@ import { Container } from "../components/index";
 import { PostForm } from "../components/index";
 import useGetPosts from "../hooks/useGetPosts";
 
-function EditPost() {
+export default function EditPost() {
   const [post, setPost] = useState(null);
   const { slug } = useParams();
   const navigate = useNavigate();
@@ -31,5 +31,3 @@ function EditPost() {
     </div>
   ) : null;
 }
-
-export default EditPost;
